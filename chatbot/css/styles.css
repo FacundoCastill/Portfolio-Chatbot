@@ -1,0 +1,133 @@
+body {
+    padding: 15px;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    flex: 2;
+    padding: 0;
+    margin-left: 270px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 10px;
+    z-index: 1000;
+}
+
+.card {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat {
+    height: 480px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.user-message {
+    text-align: right;
+}
+
+.user-message p {
+    background-color: #c10f0f;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    display: inline-block;
+}
+
+.bot-message p {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    padding: 8px;
+    display: inline-block;
+}
+
+.card-header {
+    background-color: #c10f0f;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    padding: 10px;
+}
+
+.card-footer {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 0 0 8px 8px;
+    border-top: 1px solid #ddd;
+}
+
+.button-container .btn {
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #c10f0f;
+    border: none;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.button-container .btn:hover {
+    background-color: #a10d0d;
+}
+
+#send {
+    background-color: #c10f0f;
+    border: none;
+}
+
+#send:hover {
+    background-color: #a10d0d;
+}
+
+.mute-btn {
+    font-size: 24px;
+}
+
+.contact-menu, .questions-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 10px);
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 250px;
+    z-index: 1000;
+}
+
+.contact-menu a, .questions-menu p {
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-menu a:hover, .questions-menu p:hover {
+    text-decoration: underline;
+}
